@@ -1,9 +1,11 @@
 <?php
 function throw_a_dice_n_times($n) {
     $results = [];
+
     for ($i = 0; $i < $n; $i++) {
-        array_push($results, rand(1, 6));
+        $results[] = rand(1, 6);
     }
+
     return $results;
 }
 
