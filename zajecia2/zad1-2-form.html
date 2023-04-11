@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 2 - Formularz rezerwacji hotelu</title>
+</head>
+<body>
+  <form action="zad1-2-script.php" method="post">
+    <fieldset>
+      <label>Liczba osób: <select name="number-of-people">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select></label><br><br>
+      <label>Imię: <input type="text" name="first-name"></label><br><br>
+      <label>Nazwisko: <input type="text" name="last-name"></label><br><br>
+      <label>Adres: <input type="text" name="address"></label><br><br>
+      <label>E-mail: <input type="email" name="email"></label><br><br>
+      <label>Data przyjazdu: <input type="date" name="arrival-date"></label><br><br>
+      <label>Data wyjazdu: <input type="date" name="departure-date"></label><br><br>
+      <label>Godzina przyjazdu: <input type="time" name="arrival-time"></label>
+    </fieldset><br>
+    <fieldset>
+      <label>Numer karty kredytowej: <input type="number" name="credit-card-number"></label><br><br>
+      <label>Imię oraz nazwisko właściciela karty: <input type="text" name="credit-card-owner-name"></label><br><br>
+      <label>Karta ważna do: <input type="date" name="credit-card-valid-to"></label>
+    </fieldset><br>
+    <fieldset>
+      <label>Dodatkowe łóżko dla dziecka<input type="checkbox" name="bed-for-child"></label><br><br>
+      <label>Klimatyzacja<input type="checkbox" name="air-conditioning"></label><br><br>
+      <label>Popielniczka dla palacza<input type="checkbox" name="ashtray-for-smoker"></label>
+    </fieldset><br>
+    <input type="submit" value="Zatwierdź">
+  </form>
+</body>
+</html>
