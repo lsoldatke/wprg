@@ -1,0 +1,3 @@
+https://www.google.pl/;Google
+https://www.facebook.com/;Facebook
+https://stackoverflow.com/;Stackoverflow
