@@ -7,12 +7,12 @@
 <body>
 <?php
 if (!isset($_COOKIE['counter'])) {
-    setcookie('counter', 0);
+    setcookie('counter', '1');
+    echo "Stronę odwiedzono pierwszy raz.";
 } else {
     $_COOKIE['counter']++;
+    echo "Stronę odwiedzono {$_COOKIE['counter']} razy.";
 }
-
-echo "Stronę odwiedzono {$_COOKIE['counter']} razy."
 
 ?>
 </body>
