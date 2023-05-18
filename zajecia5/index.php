@@ -5,8 +5,19 @@
     <title>Portal z samochodami</title>
 </head>
 <body>
-    <form>
+    <table>
+        <tr>
+            <td><a href="index.php">Strona glowna</a></td>
+            <td><a href="allcars.php">Wszystkie samochody</a></td>
+            <td><a href="addcar.php">Dodaj samochod</a></td>
+        </tr>
+    </table>
+    <?php
+    echo '<table>';
+    echo '<tr>';
 
-    </form>
+    echo '</tr>';
+    echo '</table>';
+    ?>
 </body>
 </html>
