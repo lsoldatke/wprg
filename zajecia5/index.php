@@ -13,11 +13,22 @@
         </tr>
     </table>
     <?php
-    echo '<table>';
-    echo '<tr>';
+    $db_hostname = "";
+    $db_username = "";
+    $db_password = "";
 
-    echo '</tr>';
-    echo '</table>';
+    if (!$db_connection = mysqli_connect($db_hostname, $db_username, $db_password)) {
+        echo "Nie można połączyć z bazą danych.<br>";
+    } else {
+        echo "Połączono z bazą danych.<br>";
+    }
+
+    if (!mysqli_close($db_connection)) {
+        echo "Nie udało się zamknąć połączenia z bazą danych.<br>";
+    } else {
+        echo "Zamknięto połączenie z bazą danych.<br>";
+    }
+
     ?>
 </body>
 </html>
