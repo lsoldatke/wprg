@@ -23,6 +23,28 @@
         echo "Połączono z bazą danych.<br>";
     }
 
+    if (!mysqli_select_db($db_connection, "mojabaza")) {
+        echo "Nie mozna wybrac bazy danych.<br>";
+    } else {
+        echo "Wybrano baze danych.<br>";
+    }
+
+    $query_result = mysqli_query($db_connection, "SELECT * FROM samochody");
+
+    echo '<table>';
+    for ($i = 0; $i < 5; $i++) {
+        $car = mysqli_fetch_row($query_result);
+
+        echo '<tr>';
+        foreach ($car as $column) {
+            echo '<td>';
+            echo $column.' ';
+            echo '</td>';
+        }
+        echo '</tr>';
+    }
+    echo '</table>';
+
     if (!mysqli_close($db_connection)) {
         echo "Nie udało się zamknąć połączenia z bazą danych.<br>";
     } else {
